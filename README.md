@@ -6,9 +6,9 @@
 
 In this homework assignment, you will practice:
 
-- Write and use a class with properties
-- Write and use a subclass/superclass relationship
-- Write and use a class with abstract methods
+- Writing and using a class with properties
+- Writing and using a subclass/superclass relationship
+- Writing and using a class with abstract methods
 
 You can find the instructions for each question in the corresponding files in the `src` directory. The corresponding tests are in the `tests` directory.
 
