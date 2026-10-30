@@ -30,5 +30,7 @@ maintenance fee as a constructor argument. The cost of a trip should always be t
 regardless of miles traveled. The capacity of the bicycle should always be 1.
 
 Don't forget to write tests in the tests directory. You may use `pytest.approx` to compare floats,
-since floating-point arithmetic can introduce small rounding errors.
+since floating-point arithmetic can introduce small rounding errors. When testing whether a class 
+is abstract (and cannot be instantiated), you may use `# type: ignore[abstract]` to suppress the 
+Mypy error for attempting to instantiate a class with an abstract method.
 """

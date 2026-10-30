@@ -20,5 +20,7 @@ from the balance if a) it's greater than zero and b) it does not exceed the curr
 the amount is zero or negative, it should raise a ValueError. If the amount to withdraw exceeds 
 the current balance, it should raise a RuntimeError.
 
-Don't forget to write tests in the tests directory.
+Don't forget to write tests in the tests directory. When testing whether a property is read-only,
+you may use `# type: ignore[misc]` to suppress the Mypy error for attempting to set a read-only 
+property.
 """
