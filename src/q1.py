@@ -7,8 +7,9 @@ to access and modify the temperature using either Celsius or Fahrenheit.
 The constructor should take one argument: the initial temperature in Celsius.
 
 The class should provide properties called `celsius` and `fahrenheit` for getting and 
-setting the temperature in the respective units. If the client tries to set the value
-to a temperature below absolute zero, a ValueError should be raised.
+setting the temperature in the respective units. If the client ever tries to set the value
+to a temperature below absolute zero (including in the constructor), a ValueError should be 
+raised.
 
 Recall that absolute zero is the lowest possible temperature:
     Celsius: -273.15°C
@@ -21,5 +22,6 @@ Recall these formulas for converting between Celsius and Fahrenheit:
     Fahrenheit = Celsius * 9 / 5 + 32
     Celsius = (Fahrenheit - 32) * 5 / 9
 
-Don't forget to write tests in the tests directory.
+Don't forget to write tests in the tests directory. You may use `pytest.approx` to compare floats,
+since floating-point arithmetic can introduce small rounding errors.
 """
